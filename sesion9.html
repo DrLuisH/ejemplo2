@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pagina cliente</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="validaciones.js"></script>
+</head>
+
+<body>
+    <h1>Este es un texto con html</h1>
+
+    <form method="post">
+        <label for="txtNombre">Teclea tu nombre</label>
+        <input type="text" name="txtNombre" id="txtNombre">
+        <br/>
+        <label for="txtEdad">Teclea la edad</label>
+        <input type="number" min="0" max="99" step="1" id="txtEdad">
+        <br/>
+        <label for="selEstadoCivil">Estado Civil:</label>
+        <select id="selEstadoCivil">
+            <option value="-1">Seleccione estado civil</option>
+            <option value="soltero">soltero</option>
+            <option value="casado">casado</option>v
+            <option value="vuido">vuido</option>
+        </select>
+    </form>
+    <button id="btnPresionar" onclick="presiona1()">Presioname</button>
+
+    <hr/>
+    <h3>Bitacora de eventos</h3>
+    <div id="bitacora">
+        
+    </div>
+</body>
+</html>
